@@ -8,7 +8,8 @@ function skippedNumber(y) {
     
     hasil.splice(y, 1); // Menghapus huruf pada indeks y
     
-    return hasil;
+    let hasilBaru = hasil.join('')
+    return hasilBaru;
 }
 
-console.log(skippedNumber(2));
+console.log(skippedNumber(0));

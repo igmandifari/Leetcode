@@ -1,22 +1,20 @@
 function Fibo(x){
     if(x<2) return x
-
     return Fibo(x-1)+Fibo(x-2)
 }
 
-function Fibo2(x){
-    if(x<2) return x
+function Fibo2(n){
+    if (n < 2) return 1 
 
-    let satu = 0
-    let dua = 1
-    let hasil = 0
-    
-    for(let i=1; i<x; i++){
-        hasil =  satu + dua
-        satu = dua
-        dua = hasil
+    let first = 1;
+    let second = 2;
+
+    for (let i = 3; i <= n; i++) {
+        let third = first + second;
+        first = second;
+        second = third;
     }
-    return hasil
+    return second;
 }
 
 console.log(Fibo(10));
