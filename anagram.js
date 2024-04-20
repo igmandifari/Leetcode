@@ -39,6 +39,6 @@ function anagram2(x, y) {
 console.log(anagram("senin","ninse"));
 console.log(anagram(123,321));
 console.log("========================");
-console.log(anagram2("asdfghjkl","alskdjfhp"));
+console.log(anagram2("asdfghjkl","alskdjfhg"));
 console.log(anagram2(123,321));
 console.log("========================");

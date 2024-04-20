@@ -70,11 +70,11 @@ function Weird(x) {
 
 
 // isPrime(100)
-Ganjil(100)
+// Ganjil(100)
 // Genap(100);
 // Fibonacci(100);
 // console.log(Bunga(850000, 5));
 // console.log(Kembalian(165000, 15, 150000));
 // console.log(Piring(6 * 144, 4 * 12, 2 * 12));
-// Weird(3);
+Weird(4);
 

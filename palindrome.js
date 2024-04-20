@@ -1,17 +1,12 @@
 function Palindrome(x){
-    if(x < 0) return false 
-    if(x < 2) return true
+    if(x<10) return true
+    if(x<0) return false
 
-    let hasil = x.toString();
-
-    for(let i=0; i<hasil.length/2; i++){
-        for(let j=hasil.length; j--;){
-            if(hasil[i]!==hasil[j]){
-                return false
-            }
-            return true
-        }
+    const str = String(x)
+    for(let i=0, j=str.length-1; i<j; i++,j--){
+        if(str[i]!==str[j]) return false
     }
+    return true
 }
 
 console.log(Palindrome(-1));

@@ -9,7 +9,7 @@ function Fibo2(n){
     let first = 1;
     let second = 2;
 
-    for (let i = 3; i <= n; i++) {
+    for (let i = 3; i < n; i++) {
         let third = first + second;
         first = second;
         second = third;
@@ -23,9 +23,9 @@ console.log(Fibo2(10));
 // Fungsi untuk menampilkan deret Fibonacci hingga n bilangan
 function fibonacci(n) {
     let fibSeries = [];
-    let num1 = 0, num2 = 1;
+    let num1 = 1, num2 = 2;
 
-    for (let i = 1; i <= n; i++) {
+    for (let i = 1; i < n; i++) {
         fibSeries[i - 1] = num1;
         let nextTerm = num1 + num2;
         num1 = num2;
@@ -59,11 +59,11 @@ function evenFibonacci2(n) {
     let fibSeries = [];
     let num1 = 0, num2 = 1;
 
-    for (let i = 1; i <= n; i++) {
-        let nextTerm = num1 + num2;
-        if (nextTerm % 2 === 0) {
-            fibSeries.push(num1);
+    for (let i = 1; i < n - 1; i++) {
+        if (num2 % 2 === 0) {
+            fibSeries.push(num2);
         }
+        let nextTerm = num1 + num2;
         num1 = num2;
         num2 = nextTerm;
     }

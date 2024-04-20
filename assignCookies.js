@@ -12,4 +12,4 @@ function assignCookies(g, s) {
     return Baru.length
 }
 
-console.log(assignCookies([1,2,3], [1,2,3]));
+console.log(assignCookies([1,2,3,4], [1,2,3,4]));

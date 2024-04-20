@@ -1,5 +1,5 @@
 function changeCase(inputString) {
-    // Melakukan perubahan casing
+    
     let result = '';
     for (let i = 0; i < inputString.length; i++) {
         let c = inputString.charAt(i);
