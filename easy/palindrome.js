@@ -1,12 +1,13 @@
 function Palindrome(x){
-    if(x<10) return true
     if(x<0) return false
+    if(x<10) return true
 
     const str = String(x)
-    for(let i=0, j=str.length-1; i<j; i++,j--){
+    for(let i=0,j=str.length-1; i<j; i++,j--){
         if(str[i]!==str[j]) return false
     }
     return true
+
 }
 
 console.log(Palindrome(-1));
