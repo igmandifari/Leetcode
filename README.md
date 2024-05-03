@@ -1,3 +1,3 @@
-just want to practice some logic here..
+just doing this to spend my free time...
 
-easy is too easy, let's move from Easy to Medium to imporve my skill XD
+easy is too easy, let's move Medium
